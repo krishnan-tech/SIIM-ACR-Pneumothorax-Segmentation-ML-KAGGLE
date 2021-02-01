@@ -4,7 +4,7 @@
 
 *URL:* ***https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation***
 
-**Download Data into Colab to download dataset**
+**Download Data into Colab to download dataset go through the following steps**
 ```
 !pip install -q kaggle
 from google.colab import files
@@ -15,7 +15,7 @@ files.upload()
 !kaggle competitions download -p "./pneumothorax/" -c siim-acr-pneumothorax-segmentation
 !unzip './pneumothorax/stage_2_train.csv.zip' -d './pneumothorax/'
 # you have to make account to google cloud and required credientials then download png images, 
-# If you don't want to do that download this datasets I found on internet which original dataset. 
+# If you don't want to do that download this datasets I found on internet with original dataset. 
 !kaggle datasets download -p './data' -d abhishek/siim-png-images
 !unzip './data/siim-png-images.zip' -d './data'
 # other extra, but same dataset, I found on internet.
